@@ -1,0 +1,121 @@
+body {
+    background:url('https://www.cepegra-labs.be/webdesign/fed2022/oli/profile-storage/img/background.jpg') center/cover;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    &::before {
+        content:'';
+        background:linear-gradient(270deg, rgba(235,0,88,0.4319852941176471) 0%, rgba(2,151,179,0.68968837535014) 100%);
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        opacity:0.95;
+      }
+}
+
+.ask  {
+    padding:10px 25px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction:column;
+    transition: 0.5s all ease-in-out;
+    &.move {
+        transform:translate(-300%,-50%);
+    }
+
+
+    input {
+        width:100%;
+        padding: 15px 30px;
+        background:none;
+        outline: 0;
+        border: 1px solid rgba(255,255,255,.9);
+        border-radius: 5px;
+        color: rgba(255,255,255,.9);
+        margin-bottom:40px;
+    }
+
+    label {
+        margin-bottom: 10px;
+        display: inline-block;
+        font-size: 30px;
+        display: block;
+        color: rgba(255,255,255,.9)
+    }
+
+    button {
+        background: none;
+        padding: 15px 30px;
+        border: 1px solid rgba(255,255,255,.9);
+        color: #fff;
+        width: 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s all ease-in-out;
+        text-transform: uppercase;
+        align-self: center;
+    }
+    
+    button:hover {
+        background: rgba(255,255,255,.1);
+        }
+    
+}
+
+::placeholder {
+    color:rgba(255,255,255,.9)
+}
+
+.profile .black {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.black {
+    max-width: 400px;
+    width: 90%;
+    margin: 0 auto;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    padding: 0 50px 50px;
+    border-radius: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s all ease-in-out;
+    transform:translate(-50%,-50%);
+    &.move {
+        transform:translate(300%,-50%);
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        border: 5px solid rgba(0,0,0,.5);
+        transform: translateY(-50%);
+        background: url() center/cover;
+    }
+
+    i {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor:pointer;
+        transition: 0.2s all ease-in-out;
+    }
+
+    i:hover {
+        color:#d1d1d1;
+    }
+}
